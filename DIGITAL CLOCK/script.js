@@ -9,7 +9,7 @@ const clock = () => {
   let minutes = new Date().getMinutes();
   let seconds = new Date().getSeconds();
 
-  let timePeriod = hour > 12 ? "PM" : "AM";
+  let timePeriod = hour >= 12 ? "PM" : "AM";
   hour = hour < 10 ? "0" + hour : hour;
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
